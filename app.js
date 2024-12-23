@@ -109,6 +109,118 @@ console.log(oddNames(names));
 
 
 
+// Array8. n ta elementdan tashkil topgan massiv berilgan. Dastlab massiv elementlari orasidan juft indekslilarini keyin toq indekslilarini chiqaruvchi programma tuzilsin.
+// A[0], A[2], A[4], ... A[1], A[3], A[5],.... Shart operatori ishlatilmasin.
+let number = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+let oddNumIndex = [];
+let evenNumIndex = [];
+function separateNum(num){
+    for(let i = 0; i <= num.length; i += 2){
+        evenNumIndex.push(num[i])
+    }
+    for(let i = 1; i <= num.length; i += 2){
+        oddNumIndex.push(num[i])
+    }
+    return [evenNumIndex + oddNumIndex]
+}
+console.log(separateNum(number));
+
+
+
+// Array9. n ta elementdan tashkil topgan massiv berilgan (n juft son). Dastlab massiv elementlari orasidan toq indekslilarini o'shish tartibida keyin juft indekslilarini kamayish tartibida chiqaruvchi programma tuzilsin. A[1], A[3], A[5],.. A[6], A[4], A[2], A[0]. Shart operatori ishlatilmasin.
+let numberz = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+let oddN = [];
+let evenN = [];
+function processNum(numberz){
+    for(let i = 1; i <= numberz.length; i += 2){
+        oddN.push(numberz[i])
+    }
+    for(let i = 0; i <= numberz.length; i += 2){
+        evenN.push(numberz[i])
+    }
+    return [oddN + evenN.reverse()]
+}
+console.log(processNum(numberz));
+
+
+
+// *** difficult
+// Array10. n ta elementdan tashkil topgan massiv berilgan. Massiv elementlarini quyidagicha chiqaruvchi programma tuzilsin. A[0], A[1], A[n-1], A[n-2], A[2], A[3], A[n-3], A[n-4], ...
+
+
+
+// chatGPT ishlatdim to'g'risi misol o'zim ishlashga qiynaldim.
+// Array11. N ta elementdan tashkil topgan arr nomli massiv va K, L butun sonlari berilgan. (0 <= K <= L < N). Massivning K va L indekslari orasidagi elementlaridan tashqari elementlari yig'indisini qaytaruvchi rangeOutSum(arr) nomli funksiya tuzilsin.
+let arr = [1, 2, 3, 4, 5, 6, 7];
+let K = 2;
+let L = 4;
+function rangeOutSum(arr, K, L) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (i < K || i > L) {
+            sum += arr[i]; 
+        }
+    }
+    return sum;
+}
+console.log(rangeOutSum(arr, K, L));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
