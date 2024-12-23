@@ -46,6 +46,22 @@ console.log(reverse(Array));
 // Array4. n ta elementdan tashkil topgan massiv berilgan. Massiv elementlari orasidan toqlarini indekslari o'sish tartibida chiqaruvchi va ularning sonini chiqaruvchi programma tuzilsin.
 // Massiv elementlar: 4 5 7 8 6 9
 // Natija: 5 7 9 toqlar soni = 3
+const array = [4, 5, 7, 8, 6, 9];
+function OddNumbers(array) {
+    const oddNumbers = []; 
+    let count = 0;         
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] % 2 !== 0) { 
+            oddNumbers.push(array[i]); 
+            count++; 
+        }
+    }
+
+    return oddNumbers + ` odd numbers = ${count}`;
+}
+
+console.log(OddNumbers(array));
+
 
 
 
